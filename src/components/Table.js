@@ -22,7 +22,11 @@ const Table = (props) => {
   const updateDataTable = (value) => {
     setDataTable(value);
     setActivePage(1);
+
+    props.onFilter(value);
   };
+
+  console.log(props.showPagination);
 
   // Определяет, нужно ли показывать пагинацию
   const showPagination = props.showPagination !== false;
@@ -45,6 +49,7 @@ const Table = (props) => {
     >
       {item}
     </span>
+    
   ));
 
   return (
