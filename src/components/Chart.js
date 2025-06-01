@@ -17,7 +17,7 @@ const Chart = (props) => {
         
         // Проверка что выбрана хотя бы одна ось OY
         if (!event.target["oy"][0].checked && !event.target["oy"][1].checked) {
-            setError("Выберите хотя бы одно значение для оси OY");
+            setError(" ");
             setHighlightError(true);
         } else {
             setError("");
