@@ -80,7 +80,7 @@ const ChartDraw = (props) => {
             .call(yAxis);
         
          // Настройки ширины столбцов
-        const barWidth = scaleX.bandwidth() * 0.3; // Узкие столбцы (30% от доступной ширины)
+        const barWidth = scaleX.bandwidth() * 0.3; // Узкие столбцы
         const barOffset = (scaleX.bandwidth() - barWidth) / 2; // Центрирование
 
         //рисуем график
